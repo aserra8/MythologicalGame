@@ -1,0 +1,49 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'House_First_Floor_mesh_0006.obj'
+
+# Vertices (Count = 16)
+v -6 -8 0
+v -7 -8 0
+v -7 -7 0
+v -6 -7 0
+v -5 -9 0
+v -6 -9 0
+v -6 -8 0
+v -5 -8 0
+v -7 -9 0
+v -8 -9 0
+v -8 -8 0
+v -7 -8 0
+v -6 -10 0
+v -7 -10 0
+v -7 -9 0
+v -6 -9 0
+
+# Texture cooridinates (Count = 14)
+vt 0.75 0.07518798
+vt 0.875 0.07518798
+vt 0.875 0.08270675
+vt 0.75 0.08270675
+vt 0.25 0.09022558
+vt 0.375 0.09022558
+vt 0.375 0.09774435
+vt 0.25 0.09774435
+vt 0.125 0.09022558
+vt 0.125 0.09774435
+vt 0.625 0.09022558
+vt 0.75 0.09022558
+vt 0.75 0.09774435
+vt 0.625 0.09774435
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g House_First_Floor_mesh_0006
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+f 5/5/1 6/6/1 7/7/1 8/8/1
+f 9/9/1 10/5/1 11/8/1 12/10/1
+f 13/11/1 14/12/1 15/13/1 16/14/1
+
