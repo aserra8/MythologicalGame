@@ -17,6 +17,10 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
 
+        GetComponent<Transform>().transform.position.x = 35;
+        GetComponent<Transform>().transform.position.y = -91;
+
+
         //Set the player position to the starting position when changing scenes
         transform.position = startingPosition.initialValue;
     }

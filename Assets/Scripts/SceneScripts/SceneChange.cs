@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneChange : MonoBehaviour
 {
 
-    public string changeScene;
+    public string sceneToLoad;
     public Vector2 playerPosition;
     public VectorValue playerStorage;
 
@@ -27,7 +27,7 @@ public class SceneChange : MonoBehaviour
         if (collision.CompareTag("Player") && !collision.isTrigger)
         {
             playerStorage.initialValue = playerPosition;
-            SceneManager.LoadScene(changeScene);
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }

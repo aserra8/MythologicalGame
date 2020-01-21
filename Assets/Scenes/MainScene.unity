@@ -228,7 +228,7 @@ GameObject:
   m_Layer: 0
   m_Name: HouseEntrance
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -284,9 +284,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a141b803b994441a540da1a280ee74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeScene: 
+  sceneToLoad: HouseFirstFloorScene
   playerPosition: {x: 7.5, y: -13.15}
-  playerStorage: {fileID: 0}
+  playerStorage: {fileID: 11400000, guid: 4cf3c2a796cb2de45b6780fba08b99f1, type: 2}
 --- !u!1 &989076801
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,16 +504,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 999438305975420757, guid: 710596f528a480b4488a9c07af8a92e2,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 999438305975420758, guid: 710596f528a480b4488a9c07af8a92e2,
         type: 3}
       propertyPath: startingPosition
       value: 
       objectReference: {fileID: 11400000, guid: 4cf3c2a796cb2de45b6780fba08b99f1,
         type: 2}
+    - target: {fileID: 999438305975420757, guid: 710596f528a480b4488a9c07af8a92e2,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 710596f528a480b4488a9c07af8a92e2, type: 3}
