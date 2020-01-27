@@ -1,0 +1,29 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'Hell_mesh_0009.obj'
+
+# Vertices (Count = 8)
+v -11 -15 0
+v -12 -15 0
+v -12 -14 0
+v -11 -14 0
+v -12 -17 0
+v -13 -17 0
+v -13 -16 0
+v -12 -16 0
+
+# Texture cooridinates (Count = 4)
+vt 0.5 0.6958525
+vt 0.625 0.6958525
+vt 0.625 0.6973886
+vt 0.5 0.6973886
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g Hell_mesh_0009
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+f 5/1/1 6/2/1 7/3/1 8/4/1
+

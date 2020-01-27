@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  startingPosition: {fileID: 0}
 --- !u!95 &999438305975420759
 Animator:
   serializedVersion: 3
