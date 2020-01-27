@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float energy;
     public float speed;
     public VectorValue startingPosition;
 
     private Vector3 change;
     private Animator animator;
     private Rigidbody2D myRigidBody;
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
 
         //Set the player position to the starting position when changing scenes
         transform.position = startingPosition.initialValue;
+
+        transform.position = new Vector2(35,-91);
     }
 
     // Update is called once per frame
