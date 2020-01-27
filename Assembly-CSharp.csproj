@@ -63,9 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CharacterScripts\Fireball.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\Monster.cs" />
+    <Compile Include="Assets\Scripts\EnemyScript.cs" />
     <Compile Include="Assets\Scripts\MovementScripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\MovementScripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\SceneScripts\SceneChange.cs" />
+    <Compile Include="Assets\Scripts\SceneScripts\SpawnEnemics.cs" />
     <Compile Include="Assets\Scripts\ValuesScripts\VectorValue.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
