@@ -143,7 +143,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d01c4989f06ad438e59ddf8a2a45a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   energy: 0
+=======
+  name: Llop mandra
+  description: "Descripci\xF3 home llop"
+  health: 100
+  attackDamage: 20
+  attackRange: 20
+  cooldownAttack: 5
+  movementSpeed: 5
+  rotationSpeed: 5
+  hitNumber: 4
+  energy: 100
+>>>>>>> Stashed changes
   speed: 5
   startingPosition: {fileID: 11400000, guid: 4cf3c2a796cb2de45b6780fba08b99f1, type: 2}
 --- !u!95 &6202566793269557667

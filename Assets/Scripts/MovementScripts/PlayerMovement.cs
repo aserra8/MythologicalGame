@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : Monster
 {
     public float energy;
     public float speed;
     public VectorValue startingPosition;
 
     private Vector3 change;
-    private Animator animator;
+    //private Animator animator;
     private Rigidbody2D myRigidBody;
 
 

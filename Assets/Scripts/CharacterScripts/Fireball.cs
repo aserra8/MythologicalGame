@@ -12,17 +12,26 @@ public class Fireball : MonoBehaviour
     
     void Start()
     {
-        timer = 5.0f;   
+        timer = 0.0f;   
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(damage);
+        if (timer >= 5.0f)
+        {
+            Destroy(this.gameObject);
+        }
+        timer += Time.deltaTime;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        Debug.Log("Colisio");
+        if (collision.tag.Equals("Player"))
+        {
+            collision.GetComponent<PlayerMovement>().health -= this.damage;
+            Destroy(this.gameObject);
+        }
     }
 }

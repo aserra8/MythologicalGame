@@ -28,13 +28,16 @@ public class EnemyScript : Monster
     public AttackStyle attackStyle;
 
     public GameObject attackStyleObject;
+    public GameObject specialAttackStyleObject;
+
+    private int countHitNumber;
 
 
     void Start()
     {
         animator = GetComponent<Animator>();
         enemyState = EnemyState.patrol;
-        cooldwonAttackTimer = 5;
+        countHitNumber = 0;
     }
 
     // Update is called once per frame
@@ -50,8 +53,6 @@ public class EnemyScript : Monster
 
             case EnemyState.detectPlayer:
 
-                Debug.Log(towardTarget.magnitude);
-
                 towardTarget = targetPosition - transform.position;
 
                 if (towardTarget.magnitude > attackRange)
@@ -64,8 +65,6 @@ public class EnemyScript : Monster
                 //transform.LookAt(targetPosition);
                 
                 transform.position += towardTarget.normalized * movementSpeed * Time.deltaTime;
-              
-                Debug.Log((towardTarget).normalized);
 
                 if (Math.Abs(towardTarget.normalized.x) > Math.Abs(towardTarget.normalized.y))
                 {
@@ -86,7 +85,10 @@ public class EnemyScript : Monster
                 if (towardTarget.magnitude <= attackRange)
                 {
                     RecalculateTargetPosition();
-                    attackPlayer();
+                    if (playerAttack.GetComponent<PlayerMovement>().health > 0)
+                    {
+                        attackPlayer();
+                    }
                 }
                 else
                     enemyState = EnemyState.detectPlayer;
@@ -105,14 +107,14 @@ public class EnemyScript : Monster
         {
             case AttackStyle.distance:
 
-                if (cooldownAttack > cooldwonAttackTimer)
+                if (cooldownAttack < cooldwonAttackTimer)
                 {
                     shot();
-                    cooldownAttack = 0;
+                    cooldwonAttackTimer = 0;
                 }
                 else
                 {
-                    cooldownAttack += Time.deltaTime;
+                    cooldwonAttackTimer += Time.deltaTime;
                 }
 
                 break;
@@ -132,10 +134,23 @@ public class EnemyScript : Monster
 
     private void shot()
     {
-        GameObject fireballSpawn = Instantiate(attackStyleObject, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
-        fireballSpawn.transform.SetParent(this.transform);
-        fireballSpawn.GetComponent<Fireball>().damage = attackDamage;
-        //fireballSpawn.
+        if (countHitNumber < hitNumber)
+        {
+            GameObject fireballSpawn = Instantiate(attackStyleObject, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+            fireballSpawn.transform.SetParent(this.transform);
+            fireballSpawn.GetComponent<Rigidbody2D>().AddForce(new Vector2(playerAttack.transform.position.x - transform.position.x, playerAttack.transform.position.y - transform.position.y), ForceMode2D.Impulse);
+            fireballSpawn.GetComponent<Fireball>().damage = attackDamage;
+            countHitNumber++;
+        }
+        else
+        {
+            GameObject fireballSpawn = Instantiate(specialAttackStyleObject, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+            fireballSpawn.transform.SetParent(this.transform);
+            fireballSpawn.GetComponent<Rigidbody2D>().AddForce(new Vector2(playerAttack.transform.position.x - transform.position.x, playerAttack.transform.position.y - transform.position.y), ForceMode2D.Impulse);
+            fireballSpawn.GetComponent<Fireball>().damage = attackDamage * 1.25f;
+            countHitNumber = 0;
+        }
+        
     }
 
     private void RecalculateTargetPosition()
