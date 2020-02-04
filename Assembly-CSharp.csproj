@@ -101,6 +101,7 @@
     <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth.shader" />
     <None Include="Assets\Tiled2Unity\Imported\House_Second_Floor.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\House_First_Floor.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\IceCave.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Imported\IceMap.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />

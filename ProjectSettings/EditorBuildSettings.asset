@@ -14,4 +14,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HouseSecondFloorScene.unity
     guid: a85ffe14975827f46a3440d7e030996c
+  - enabled: 1
+    path: Assets/Scenes/StoreScene.unity
+    guid: c6445322ab28914458c9c74d60a4ba51
+  - enabled: 1
+    path: Assets/Scenes/SecondHouseFirstFloorScene.unity
+    guid: 745b7ff2633db4a44ba11f2e0f16c573
+  - enabled: 1
+    path: Assets/Scenes/SecondHouseSecondFloorScene.unity
+    guid: 119c93467dfb41b47a92a8722b3eb263
+  - enabled: 1
+    path: Assets/Scenes/SnowZoneScene.unity
+    guid: 58a035947e6925e41895c5c34e3bb25b
+  - enabled: 1
+    path: Assets/Scenes/IceCaveScene.unity
+    guid: 037c01474ab391b4ca74205802b4fbc5
   m_configObjects: {}

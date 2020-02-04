@@ -22,8 +22,6 @@ public class PlayerMovement : MonoBehaviour
 
         //Set the player position to the starting position when changing scenes
         transform.position = startingPosition.initialValue;
-
-        transform.position = new Vector2(35,-91);
     }
 
     // Update is called once per frame
