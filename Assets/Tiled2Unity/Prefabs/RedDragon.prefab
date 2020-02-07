@@ -152,9 +152,11 @@ MonoBehaviour:
   cooldownAttack: 4
   movementSpeed: 1.66
   rotationSpeed: 1.24
-  hitNumber: 0
+  hitNumber: 3
   attackStyle: 0
-  attackStyleObject: {fileID: 2013095701705567250, guid: 16f7b4bd6da950b41b79abb5f3d32cc5,
+  attackStyleObject: {fileID: 1291506263023846153, guid: 16f7b4bd6da950b41b79abb5f3d32cc5,
+    type: 3}
+  specialAttackStyleObject: {fileID: 1540264304445090938, guid: 61a7f869014fcb3489b0c91ab9d0f9b5,
     type: 3}
 --- !u!95 &6724108913508625166
 Animator:

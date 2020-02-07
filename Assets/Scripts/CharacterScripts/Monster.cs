@@ -15,14 +15,10 @@ public class Monster : MonoBehaviour
     protected float cooldwonAttackTimer;
     public float movementSpeed;
     public float rotationSpeed;
-    public int hitNumber;
-
-
-    
+    public int hitNumber;    
 
     protected Animator animator;
-
-
+    
     void Start()
     {
         
