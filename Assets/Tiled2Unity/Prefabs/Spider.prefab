@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6724108913508625171
+--- !u!1 &4053617230386163548
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6724108913508625175}
-  - component: {fileID: 6724108913508625172}
-  - component: {fileID: 6724108913508625173}
-  - component: {fileID: 6724108913508625170}
-  - component: {fileID: 6724108913508625168}
-  - component: {fileID: 6724108913508625166}
+  - component: {fileID: 6749359777254606148}
+  - component: {fileID: 169604364826995293}
+  - component: {fileID: 7217783876699171285}
+  - component: {fileID: 1354668352930231094}
+  - component: {fileID: 4396772919757083480}
+  - component: {fileID: 2264044880979678986}
   m_Layer: 0
-  m_Name: RedDragon
+  m_Name: Spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6724108913508625175
+--- !u!4 &6749359777254606148
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6724108913508625171}
+  m_GameObject: {fileID: 4053617230386163548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.3, y: -70, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 36.960136, y: -62.8346, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6724108913508625172
+--- !u!212 &169604364826995293
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6724108913508625171}
+  m_GameObject: {fileID: 4053617230386163548}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,26 +73,71 @@ SpriteRenderer:
   m_SortingLayerID: 156757447
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2237450425591679811, guid: 65c38bbd321aed54fa881b83ec8a66f8,
+  m_Sprite: {fileID: 3873087697204469031, guid: fb108bfa6f48cd649bb31626b326a066,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.05, y: 1.61}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6724108913508625173
+--- !u!95 &7217783876699171285
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4053617230386163548}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc09842f978cb1e40b0244b18d767e9c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1354668352930231094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4053617230386163548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75322354f96699f4a80a66f3ffb79751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Spider
+  description: Descripcio aranya
+  health: 100
+  attackDamage: 20
+  attackRange: 1
+  cooldownAttack: 2
+  movementSpeed: 5
+  rotationSpeed: 5
+  hitNumber: 3
+  attackStyle: 0
+  attackStyleObject: {fileID: 7677705355346155358, guid: 703bc469731d3ef4ca7a7be83172f684,
+    type: 3}
+  specialAttackStyleObject: {fileID: 971169554118218561, guid: 8a893098657265b45b4de6eef2e93b03,
+    type: 3}
+--- !u!50 &4396772919757083480
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6724108913508625171}
+  m_GameObject: {fileID: 4053617230386163548}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -106,74 +151,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &6724108913508625170
+--- !u!61 &2264044880979678986
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6724108913508625171}
+  m_GameObject: {fileID: 4053617230386163548}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.016389787, y: 0.02517271}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.05, y: 1.61}
-    newSize: {x: 2.05, y: 1.61}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7, y: 7}
+  m_Size: {x: 2.0900626, y: 2.402638}
   m_EdgeRadius: 0
---- !u!114 &6724108913508625168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6724108913508625171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75322354f96699f4a80a66f3ffb79751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Drac vermell
-  description: "Descripci\xF3 del drac"
-  health: 150
-  attackDamage: 20
-  attackRange: 5
-  cooldownAttack: 2
-  movementSpeed: 3
-  rotationSpeed: 1.24
-  hitNumber: 2
-  attackStyle: 0
-  attackStyleObject: {fileID: 1291506263023846153, guid: 16f7b4bd6da950b41b79abb5f3d32cc5,
-    type: 3}
-  specialAttackStyleObject: {fileID: 1540264304445090938, guid: 61a7f869014fcb3489b0c91ab9d0f9b5,
-    type: 3}
---- !u!95 &6724108913508625166
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6724108913508625171}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2ff91508a46e93f46ad922e40c3e9af3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
