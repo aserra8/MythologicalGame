@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CanvasChanger.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Fireball.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Monster.cs" />
     <Compile Include="Assets\Scripts\EnemyScript.cs" />
