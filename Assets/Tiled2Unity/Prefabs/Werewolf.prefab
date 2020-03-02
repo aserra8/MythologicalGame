@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8233190441184975510}
   - component: {fileID: 8233190441184975509}
   - component: {fileID: 8233190441184975508}
+  - component: {fileID: -2491227466918940372}
   m_Layer: 0
   m_Name: Werewolf
   m_TagString: Player
@@ -174,3 +175,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-2491227466918940372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8233190441184975514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b010685cd3fd5df4aa2bce3e85e59230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackNormal: {fileID: 8562327425755518928, guid: 197c5b4694849474187a2727f74646d2,
+    type: 3}
+  attackFinal: {fileID: 5041652702848305030, guid: 1e08e2af0cf79224f93d148b1c814a23,
+    type: 3}
