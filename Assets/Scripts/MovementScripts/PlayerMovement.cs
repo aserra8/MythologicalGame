@@ -11,7 +11,8 @@ public class PlayerMovement : Monster
     private Vector3 change;
     //private Animator animator;
     private Rigidbody2D myRigidBody;
-
+    public DeathMenuScript deathMenu;
+        
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,9 @@ public class PlayerMovement : Monster
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
 
-        UpdateAnimationAndMove();   
+        UpdateAnimationAndMove();
+
+        CheckDeath();
     }
 
     void UpdateAnimationAndMove()
@@ -52,5 +55,13 @@ public class PlayerMovement : Monster
     void MoveCharacter()
     {
         myRigidBody.MovePosition(transform.position + change * speed * Time.deltaTime);
+    }
+
+    void CheckDeath()
+    {
+        if (health <= 0)
+        {
+            deathMenu.ShowMenu();
+        }
     }
 }

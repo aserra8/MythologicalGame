@@ -66,12 +66,12 @@
     <Compile Include="Assets\Scripts\CanvasChanger.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Fireball.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Monster.cs" />
-    <Compile Include="Assets\Scripts\CharacterScripts\ResurrectWerewolf.cs" />
     <Compile Include="Assets\Scripts\EnemyScript.cs" />
     <Compile Include="Assets\Scripts\MovementScripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\MovementScripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\SceneScripts\SceneChange.cs" />
     <Compile Include="Assets\Scripts\SceneScripts\SpawnEnemics.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\DeathMenuScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\PauseMenuScript.cs" />
     <Compile Include="Assets\Scripts\ValuesScripts\VectorValue.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

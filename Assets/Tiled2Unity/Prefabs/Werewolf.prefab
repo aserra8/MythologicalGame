@@ -145,14 +145,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 
   description: 
-  health: 0
-  attackDamage: 0
-  attackRange: 0
-  cooldownAttack: 0
-  movementSpeed: 0
-  rotationSpeed: 0
-  hitNumber: 0
-  energy: 0
+  health: 100
+  attackDamage: 5
+  attackRange: 5
+  cooldownAttack: 3
+  movementSpeed: 5
+  rotationSpeed: 5
+  hitNumber: 5
+  energy: 50
   speed: 30
   startingPosition: {fileID: 11400000, guid: 4cf3c2a796cb2de45b6780fba08b99f1, type: 2}
 --- !u!95 &8233190441184975508
