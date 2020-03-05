@@ -8,6 +8,10 @@ TagManager:
   - HealthBar
   - AttackDamageText
   - SpeedMovementText
+<<<<<<< HEAD
+=======
+  - Enemy
+>>>>>>> d13d366b53b62f4d303bd14ac94d3782f8c7c9c9
   layers:
   - Default
   - TransparentFX

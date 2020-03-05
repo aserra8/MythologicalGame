@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,8 +34,20 @@ public class PlayerMovement : Monster
         change.y = Input.GetAxisRaw("Vertical");
 
         UpdateAnimationAndMove();
+<<<<<<< HEAD
 
         CheckDeath();
+=======
+        DieAnimation();
+    }
+
+    private void DieAnimation()
+    {
+        if (health <= 0)
+        {
+            animator.SetBool("dead", true);
+        }
+>>>>>>> d13d366b53b62f4d303bd14ac94d3782f8c7c9c9
     }
 
     void UpdateAnimationAndMove()
