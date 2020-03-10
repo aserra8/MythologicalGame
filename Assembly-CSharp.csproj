@@ -66,6 +66,9 @@
     <Compile Include="Assets\Scripts\CanvasChanger.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Fireball.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\Monster.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\PlayerScript.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\WereWolfAttack.cs" />
     <Compile Include="Assets\Scripts\EnemyScript.cs" />
     <Compile Include="Assets\Scripts\MovementScripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\MovementScripts\PlayerMovement.cs" />
